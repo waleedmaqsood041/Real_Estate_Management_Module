@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="estate_type_action" model="ir.actions.act_window">
+
+        <field name="name">Property Types</field>
+
+        <field name="res_model">estate.property.type</field>
+
+        <field name="view_mode">tree,form</field>
+
+    </record>
+
+    <record model="ir.ui.view" id="estate_property_type_tree">
+
+        <field name="name">estate.property.type.tree</field>
+
+        <field name="model">estate.property.type</field>
+
+        <field name="priority" eval="16"/>
+
+        <field name="arch" type="xml">
+
+            <tree string="Tests">
+
+                <field name="name"/>
+
+            </tree>
+
+        </field>
+
+    </record>
+
+    <record model="ir.ui.view" id="estate_property_type_form">
+
+        <field name="name">estate.property.type.form</field>
+
+        <field name="model">estate.property.type</field>
+
+        <field name="priority" eval="16"/>
+
+        <field name="arch" type="xml">
+
+            <form string="Test">
+
+                <sheet>
+
+                    <group>
+
+                        <h2><field name="name"/></h2>
+
+                    </group>
+
+                </sheet>
+
+            </form>
+
+        </field>
+
+    </record>
+
+    <record model="ir.ui.view" id="estate_property_type_search">
+
+        <field name="name">estate.property.type.search</field>
+
+        <field name="model">estate.property.type</field>
+
+        <field name="priority" eval="16"/>
+
+        <field name="arch" type="xml">
+
+            <search string="Tests">
+
+                <field name="name"/>
+
+            </search>
+
+
+        </field>
+
+    </record>
+
+
+</odoo>
